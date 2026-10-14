@@ -1,0 +1,48 @@
+{
+  "name": "magic-patterns-vite-template",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server/index.mjs",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src vite.config.ts tailwind.config.js postcss.config.js --ext .js,.jsx,.ts,.tsx --max-warnings 0",
+    "test": "node --test tests/*.test.mjs",
+    "start": "node server/index.mjs --production",
+    "preview": "npm run start",
+    "format": "prettier --write src server tests *.json *.js *.ts README.md"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "date-fns": "^4.0.0",
+    "framer-motion": "^11.5.4",
+    "lucide-react": "0.522.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.4",
+    "recharts": "^2.12.7",
+    "sonner": "^2.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^20.11.18",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.71.2",
+    "@typescript-eslint/parser": "^8.71.2",
+    "@vitejs/plugin-react": "^5.2.0",
+    "autoprefixer": "latest",
+    "eslint": "^8.50.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.1",
+    "postcss": "latest",
+    "prettier": "^3.9.10",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.5.4",
+    "vite": "^7.3.7"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
